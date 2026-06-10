@@ -21,7 +21,6 @@ body{background:var(--bg);color:var(--text);font-family:'Exo 2',sans-serif;min-h
 .blob.b{width:500px;height:500px;top:30%;right:-100px;background:radial-gradient(circle,#00cfff,transparent)}
 .blob.c{width:400px;height:400px;bottom:0;left:35%;background:radial-gradient(circle,#7c3aed,transparent)}
 
-/* OFFLINE */
 #offline-overlay{position:fixed;inset:0;background:rgba(7,8,15,.97);z-index:900;display:none;align-items:center;justify-content:center;flex-direction:column;gap:20px;text-align:center;padding:32px}
 #offline-overlay.show{display:flex}
 #offline-overlay h2{font-family:'Rajdhani',sans-serif;font-size:32px;font-weight:700;letter-spacing:3px;color:var(--ff)}
@@ -30,7 +29,6 @@ body{background:var(--bg);color:var(--text);font-family:'Exo 2',sans-serif;min-h
 .off-btns a{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;border-radius:10px;background:#25d366;color:#fff;text-decoration:none;font-weight:700;font-size:13px}
 .off-btns a.tele{background:#229ed9}
 
-/* AUTH */
 .auth-overlay{position:fixed;inset:0;background:rgba(0,0,0,.88);backdrop-filter:blur(14px);z-index:400;display:none;align-items:center;justify-content:center;padding:20px}
 .auth-overlay.open{display:flex}
 .auth-box{background:var(--bg2);border:1px solid var(--border2);border-radius:22px;padding:36px 28px;width:100%;max-width:400px;animation:modin .3s ease}
@@ -47,9 +45,8 @@ body{background:var(--bg);color:var(--text);font-family:'Exo 2',sans-serif;min-h
 .fg input:focus{border-color:var(--rbx)}.fg input::placeholder{color:var(--muted)}
 .auth-err{background:rgba(255,60,60,.12);border:1px solid rgba(255,60,60,.3);color:#ff8888;font-size:12px;padding:10px 14px;border-radius:8px;margin-bottom:14px;display:none}
 .auth-err.show{display:block}
-.auth-submit{width:100%;padding:13px;border-radius:10px;border:none;background:linear-gradient(135deg,var(--rbx),#0099cc);color:#fff;font-family:'Exo 2',sans-serif;font-weight:800;font-size:14px;letter-spacing:1px;cursor:pointer}
+.auth-submit{width:100%;padding:13px;border-radius:10px;border:none;background:linear-gradient(135deg,var(--rbx),#0099cc);color:#fff;font-family:'Exo 2',sans-serif;font-weight:800;font-size:14px;cursor:pointer}
 
-/* NAV */
 nav{position:sticky;top:0;z-index:200;background:rgba(7,8,15,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
 .nav-inner{max-width:1080px;margin:0 auto;padding:0 18px;display:flex;align-items:center;justify-content:space-between;height:58px}
 .logo{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:22px;letter-spacing:3px}
@@ -60,8 +57,8 @@ nav{position:sticky;top:0;z-index:200;background:rgba(7,8,15,.92);backdrop-filte
 .ntab:hover,.ntab.active{color:var(--text);border-color:var(--border2);background:var(--bg3)}
 .ntab.ff.active{border-color:var(--ff);color:var(--ff);background:rgba(255,60,60,.08)}
 .ntab.rbx.active{border-color:var(--rbx);color:var(--rbx);background:rgba(0,207,255,.08)}
-.user-btn{background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:6px 14px;border-radius:8px;font-family:'Exo 2',sans-serif;font-weight:700;font-size:12px;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:6px}
-.blink-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:blink 1s infinite;flex-shrink:0}
+.user-btn{background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:6px 14px;border-radius:8px;font-family:'Exo 2',sans-serif;font-weight:700;font-size:12px;cursor:pointer;display:flex;align-items:center;gap:6px}
+.blink-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:blink 1s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 
 .container{max-width:1080px;margin:0 auto;padding:0 18px;position:relative;z-index:5}
@@ -123,8 +120,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(7,8,15,.92);backdrop-filte
 .punit{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
 .pold{font-size:11px;color:var(--muted);text-decoration:line-through;min-height:15px;margin-bottom:2px}
 .pprice{font-size:16px;font-weight:800;margin-bottom:12px}
-.pbtn{width:100%;padding:8px;border-radius:7px;border:none;font-family:'Exo 2',sans-serif;font-weight:700;font-size:11px;letter-spacing:1px;cursor:pointer;transition:all .15s}
-.pbtn:hover{opacity:.85}
+.pbtn{width:100%;padding:8px;border-radius:7px;border:none;font-family:'Exo 2',sans-serif;font-weight:700;font-size:11px;cursor:pointer}
 .pbtn.ff{background:linear-gradient(135deg,var(--ff),var(--ffo));color:#fff}
 .pbtn.rbx{background:linear-gradient(135deg,var(--rbx),#0099cc);color:#fff}
 .pbtn.rbxs{background:linear-gradient(135deg,#a78bfa,#7c3aed);color:#fff}
@@ -134,8 +130,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(7,8,15,.92);backdrop-filte
 .selbar-l{display:flex;align-items:center;gap:10px}
 .selbar-title{font-weight:800;font-size:15px}
 .selbar-price{font-size:13px;color:var(--gold);font-weight:700}
-.clr-btn{background:transparent;border:1px solid var(--border2);color:var(--muted);padding:5px 11px;border-radius:6px;cursor:pointer;font-size:11px;transition:all .2s}
-.clr-btn:hover{border-color:var(--ff);color:var(--ff)}
+.clr-btn{background:transparent;border:1px solid var(--border2);color:var(--muted);padding:5px 11px;border-radius:6px;cursor:pointer;font-size:11px}
 
 .osection{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:24px 20px;margin-bottom:28px}
 .osection h3{font-family:'Rajdhani',sans-serif;font-size:17px;font-weight:700;letter-spacing:2px;margin-bottom:5px}
@@ -164,36 +159,39 @@ nav{position:sticky;top:0;z-index:200;background:rgba(7,8,15,.92);backdrop-filte
 .osub.ff{background:linear-gradient(135deg,var(--ff),var(--ffo));color:#fff;box-shadow:0 0 28px rgba(255,60,60,.28)}
 .osub.rbx{background:linear-gradient(135deg,var(--rbx),#0099cc);color:#fff;box-shadow:0 0 28px rgba(0,207,255,.22)}
 
-/* ===== ULASAN / REVIEW SECTION ===== */
-.review-section{margin-bottom:48px}
-.review-section-title{font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;letter-spacing:2px;margin-bottom:6px}
-.review-avg{display:flex;align-items:center;gap:12px;margin-bottom:20px}
-.review-avg-num{font-family:'Rajdhani',sans-serif;font-size:48px;font-weight:700;color:var(--gold);line-height:1}
-.review-avg-stars{font-size:22px;letter-spacing:2px}
-.review-avg-total{font-size:12px;color:var(--muted)}
-.review-list{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
-.review-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:18px 20px;transition:border-color .2s}
-.review-card:hover{border-color:var(--border2)}
-.review-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:8px}
-.review-name{font-weight:800;font-size:14px;display:flex;align-items:center;gap:8px}
-.review-name .ava{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex-shrink:0}
-.review-stars{font-size:16px;letter-spacing:1px}
-.review-date{font-size:10px;color:var(--muted)}
-.review-msg{font-size:13px;color:var(--text);line-height:1.6;margin-bottom:8px}
-.review-reply{background:var(--bg3);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:10px 14px;font-size:12px;line-height:1.6;margin-top:8px}
-.review-reply-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:800;margin-bottom:4px;display:flex;align-items:center;gap:4px}
-.review-form{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:20px}
-.review-form h4{font-family:'Rajdhani',sans-serif;font-size:16px;font-weight:700;letter-spacing:2px;margin-bottom:16px}
-.star-picker{display:flex;gap:8px;margin-bottom:14px;font-size:28px;cursor:pointer}
-.star-picker span{transition:transform .1s;user-select:none}
-.star-picker span:hover,.star-picker span.active{transform:scale(1.2)}
-.review-inp{width:100%;background:var(--bg3);border:1px solid var(--border2);border-radius:9px;padding:11px 14px;color:var(--text);font-family:'Exo 2',sans-serif;font-size:13px;outline:none;resize:none;transition:border-color .2s}
-.review-inp:focus{border-color:var(--gold)}
-.review-inp::placeholder{color:var(--muted)}
-.review-submit{margin-top:12px;padding:11px 24px;border-radius:9px;border:none;background:linear-gradient(135deg,var(--gold),var(--ffo));color:#000;font-family:'Exo 2',sans-serif;font-weight:800;font-size:13px;letter-spacing:1px;cursor:pointer;transition:all .2s}
-.review-submit:hover{opacity:.88;transform:translateY(-1px)}
+/* ===== ULASAN ===== */
+.review-section{padding:0 0 60px;position:relative;z-index:5}
+.rv-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px}
+.rv-title{font-family:'Rajdhani',sans-serif;font-size:22px;font-weight:700;letter-spacing:2px}
+.rv-avg{display:flex;align-items:center;gap:12px}
+.rv-avg-num{font-family:'Rajdhani',sans-serif;font-size:44px;font-weight:700;color:var(--gold);line-height:1}
+.rv-avg-stars{font-size:20px;letter-spacing:2px}
+.rv-avg-total{font-size:11px;color:var(--muted);margin-top:2px}
+.rv-list{display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
+.rv-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:18px 20px}
+.rv-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:8px}
+.rv-name-row{display:flex;align-items:center;gap:8px}
+.rv-ava{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;flex-shrink:0}
+.rv-name{font-weight:800;font-size:14px}
+.rv-stars{font-size:16px;letter-spacing:1px;margin-bottom:2px}
+.rv-date{font-size:10px;color:var(--muted)}
+.rv-msg{font-size:13px;line-height:1.6;margin-bottom:8px}
+.rv-reply{background:var(--bg3);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin-top:8px}
+.rv-reply-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:800;margin-bottom:4px;display:flex;align-items:center;gap:4px}
+.rv-reply-txt{font-size:13px;line-height:1.5}
+.rv-form{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:20px}
+.rv-form h4{font-family:'Rajdhani',sans-serif;font-size:16px;font-weight:700;letter-spacing:2px;margin-bottom:16px}
+.star-row{display:flex;gap:10px;margin-bottom:14px;font-size:32px;cursor:pointer}
+.star-row span{transition:transform .15s;user-select:none;opacity:.35}
+.star-row span.lit{opacity:1}
+.star-row span:hover{transform:scale(1.2)}
+.rv-inp{width:100%;background:var(--bg3);border:1px solid var(--border2);border-radius:9px;padding:11px 14px;color:var(--text);font-family:'Exo 2',sans-serif;font-size:13px;outline:none;resize:none;transition:border-color .2s}
+.rv-inp:focus{border-color:var(--gold)}.rv-inp::placeholder{color:var(--muted)}
+.rv-submit{margin-top:12px;padding:11px 24px;border-radius:9px;border:none;background:linear-gradient(135deg,var(--gold),var(--ffo));color:#000;font-family:'Exo 2',sans-serif;font-weight:800;font-size:13px;cursor:pointer}
+.rv-submit:hover{opacity:.88}
+.rv-already{background:rgba(0,232,122,.08);border:1px solid rgba(0,232,122,.2);border-radius:10px;padding:14px;font-size:13px;color:var(--green);text-align:center}
 
-/* ===== CHAT WIDGET ===== */
+/* ===== CHAT ===== */
 .chat-fab{position:fixed;bottom:24px;right:24px;z-index:300;background:linear-gradient(135deg,#5865f2,#7c3aed);width:56px;height:56px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 20px rgba(88,101,242,.5);transition:all .2s}
 .chat-fab:hover{transform:scale(1.1)}
 .chat-notif-fab{position:absolute;top:-3px;right:-3px;background:var(--ff);color:#fff;font-size:9px;font-weight:800;width:18px;height:18px;border-radius:50%;display:none;align-items:center;justify-content:center}
@@ -206,11 +204,11 @@ nav{position:sticky;top:0;z-index:200;background:rgba(7,8,15,.92);backdrop-filte
 .ch-ava{width:36px;height:36px;background:rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px}
 .ch-title{font-weight:800;font-size:14px}
 .ch-sub{font-size:10px;color:rgba(255,255,255,.6);display:flex;align-items:center;gap:4px}
-.ch-online{width:6px;height:6px;background:#00e87a;border-radius:50%;animation:blink 1.5s infinite}
-.ch-close{margin-left:auto;background:transparent;border:none;color:rgba(255,255,255,.6);font-size:18px;cursor:pointer;padding:2px 6px;line-height:1}
+.ch-live{width:6px;height:6px;background:#00e87a;border-radius:50%;animation:blink 1.5s infinite}
+.ch-close{margin-left:auto;background:transparent;border:none;color:rgba(255,255,255,.6);font-size:18px;cursor:pointer;padding:2px 6px}
 
 .chat-msgs{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;background:var(--bg);scroll-behavior:smooth}
-.chat-msgs::-webkit-scrollbar{width:3px}.chat-msgs::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+.chat-msgs::-webkit-scrollbar{width:3px}.chat-msgs::-webkit-scrollbar-thumb{background:var(--border2)}
 
 .cmsg-wrap{display:flex;align-items:flex-end;gap:7px;animation:msgin .2s ease}
 @keyframes msgin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
@@ -223,9 +221,8 @@ nav{position:sticky;top:0;z-index:200;background:rgba(7,8,15,.92);backdrop-filte
 .cmsg-bubble.other{background:var(--bg3);border-radius:4px 12px 12px 12px}
 .cmsg-bubble.mine{background:linear-gradient(135deg,#5865f2,#4338ca);color:#fff;border-radius:12px 4px 12px 12px}
 .cmsg-wrap.is-admin .cmsg-bubble{background:linear-gradient(135deg,rgba(255,212,59,.12),rgba(255,140,0,.08));border:1px solid rgba(255,212,59,.25);border-left:3px solid var(--gold);border-radius:4px 12px 12px 12px}
-.cmsg-wrap.is-admin.me .cmsg-bubble{border-left:none;border-right:3px solid var(--gold);border-radius:12px 4px 12px 12px}
-.admin-chat-badge{display:inline-flex;align-items:center;gap:3px;background:linear-gradient(135deg,#ffd43b,#ff8c00);color:#000;font-size:8px;font-weight:800;letter-spacing:1px;padding:1px 6px;border-radius:3px;text-transform:uppercase;margin-bottom:4px}
 .cmsg-wrap.is-admin .cmsg-name{color:var(--gold)!important;font-weight:800}
+.admin-chat-badge{display:inline-flex;align-items:center;gap:3px;background:linear-gradient(135deg,#ffd43b,#ff8c00);color:#000;font-size:8px;font-weight:800;letter-spacing:1px;padding:1px 6px;border-radius:3px;text-transform:uppercase;margin-bottom:4px}
 .cmsg-time{font-size:9px;color:var(--muted);margin-top:2px}
 .cmsg-wrap.me .cmsg-time{text-align:right}
 .sys-msg{text-align:center;font-size:10px;color:var(--muted);padding:6px 0}
@@ -233,9 +230,8 @@ nav{position:sticky;top:0;z-index:200;background:rgba(7,8,15,.92);backdrop-filte
 .chat-input-row{display:flex;gap:8px;padding:10px 12px;border-top:1px solid var(--border);flex-shrink:0;background:var(--bg2)}
 .chat-inp{flex:1;background:var(--bg3);border:1px solid var(--border2);border-radius:8px;padding:9px 12px;color:var(--text);font-family:'Exo 2',sans-serif;font-size:13px;outline:none}
 .chat-inp:focus{border-color:#5865f2}
-.chat-send{background:linear-gradient(135deg,#5865f2,#7c3aed);border:none;border-radius:8px;width:36px;height:36px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;color:#fff}
+.chat-send{background:linear-gradient(135deg,#5865f2,#7c3aed);border:none;border-radius:8px;width:36px;height:36px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;color:#fff}
 
-/* ORDER MODAL */
 .modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(10px);z-index:500;display:none;align-items:center;justify-content:center;padding:20px}
 .modal-ov.open{display:flex}
 .modal{background:var(--bg2);border:1px solid var(--border2);border-radius:20px;padding:32px 24px;width:100%;max-width:400px;position:relative;animation:modin .3s ease}
@@ -256,8 +252,8 @@ footer{position:relative;z-index:5;border-top:1px solid var(--border);padding:24
 .flogo{font-family:'Rajdhani',sans-serif;font-size:17px;font-weight:700;letter-spacing:3px}
 .flogo .s{color:var(--ff)}.flogo .st{color:var(--rbx)}
 .fcopy{font-size:11px;color:var(--muted)}
-.rv{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
-.rv.vis{opacity:1;transform:translateY(0)}
+.rv-section{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.rv-section.vis{opacity:1;transform:translateY(0)}
 
 @media(max-width:600px){
   .nav-tabs{display:none}
@@ -271,6 +267,88 @@ footer{position:relative;z-index:5;border-top:1px solid var(--border);padding:24
 </head>
 <body>
 <div class="ambient"><div class="blob a"></div><div class="blob b"></div><div class="blob c"></div></div>
+
+<!-- FIREBASE SDK -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getDatabase, ref, push, onValue, set, get, update } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCTy9WojcIykLHviZWVqoy51C8H9IPBl38",
+  authDomain: "talentidstore.firebaseapp.com",
+  databaseURL: "https://talentidstore-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "talentidstore",
+  storageBucket: "talentidstore.firebasestorage.app",
+  messagingSenderId: "219811848649",
+  appId: "1:219811848649:web:fc668676c6d3a923b48818"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+// ===== EXPOSE TO GLOBAL =====
+window.FB_DB = db;
+window.FB_REF = ref;
+window.FB_PUSH = push;
+window.FB_ON_VALUE = onValue;
+window.FB_SET = set;
+window.FB_GET = get;
+window.FB_UPDATE = update;
+window.FB_READY = true;
+
+// ===== LISTEN STATUS =====
+onValue(ref(db, 'store/status'), function(snap) {
+  var s = snap.val() || 'on';
+  var msg = '';
+  get(ref(db, 'store/offline_msg')).then(function(ms) {
+    msg = ms.val() || 'Maaf, TalentID Store sedang offline.';
+    var el = document.getElementById('offline-overlay');
+    if (s === 'off') {
+      el.classList.add('show');
+      document.getElementById('offline-msg-txt').textContent = msg;
+    } else {
+      el.classList.remove('show');
+    }
+  });
+});
+
+// ===== LISTEN CHAT =====
+onValue(ref(db, 'chat'), function(snap) {
+  var data = snap.val();
+  var msgs = data ? Object.values(data).sort(function(a,b){return (a.time||0)-(b.time||0);}) : [];
+  window.FB_CHAT_MSGS = msgs;
+  if (window.chatOpen) renderChatFromFB(msgs);
+  // Notif for new messages
+  if (window.lastChatCount !== undefined && msgs.length > window.lastChatCount) {
+    var newMsgs = msgs.slice(window.lastChatCount);
+    newMsgs.forEach(function(m) {
+      if (!window.currentUser || m.sender !== window.currentUser.name) {
+        window.unreadChat = (window.unreadChat||0) + 1;
+        var fab = document.getElementById('chat-notif-fab');
+        fab.textContent = window.unreadChat > 9 ? '9+' : String(window.unreadChat);
+        fab.classList.add('show');
+      }
+    });
+  }
+  window.lastChatCount = msgs.length;
+  // Update online count
+  var now = Date.now();
+  var unique = [];
+  msgs.filter(function(m){return now - m.time < 300000;}).forEach(function(m){if(unique.indexOf(m.sender)<0)unique.push(m.sender);});
+  var oc = document.getElementById('online-count');
+  if (oc) oc.textContent = Math.max(unique.length,1) + ' online';
+});
+
+// ===== LISTEN REVIEWS =====
+onValue(ref(db, 'reviews'), function(snap) {
+  var data = snap.val();
+  var rvs = data ? Object.entries(data).map(function(e){return Object.assign({_key:e[0]},e[1]);}).sort(function(a,b){return (b.time||0)-(a.time||0);}) : [];
+  window.FB_REVIEWS = rvs;
+  renderReviewsFromFB(rvs);
+});
+
+console.log('Firebase connected!');
+</script>
 
 <!-- OFFLINE -->
 <div id="offline-overlay">
@@ -334,61 +412,56 @@ footer{position:relative;z-index:5;border-top:1px solid var(--border);padding:24
 </section>
 
 <div class="container">
-
-<!-- FF PAGE -->
 <div class="page active" id="page-ff">
-  <div class="gbanner ff rv"><div class="bicon">🔥</div><div><div class="btitle ff">FREE FIRE — DIAMOND</div><div class="bdesc">Top up Diamond FF langsung ke ID kamu. Tanpa login akun.</div><div class="bbadges"><span class="mbadge g">⚡ Instan</span><span class="mbadge o">🔒 Tanpa Password</span><span class="mbadge b">✅ Terpercaya</span></div></div></div>
-  <div class="slabel rv">Pilih Nominal Diamond</div>
-  <div class="pgrid rv" id="ff-grid"></div>
-  <div class="selbar rv" id="ff-bar"><div class="selbar-l"><span style="font-size:22px">💎</span><div><div class="selbar-title" id="ff-stitle">—</div><div class="selbar-price" id="ff-sprice">—</div></div></div><button class="clr-btn" onclick="clearSel('ff')">✕ Batal</button></div>
-  <div class="osection rv"><h3>DATA AKUN</h3><p class="hint">Pastikan ID sudah benar sebelum order</p><div class="fg"><label>ID Free Fire Kamu</label><input type="text" id="ff-uid" placeholder="contoh123" style="border-color:rgba(255,60,60,.3)"></div></div>
-  <p class="sec-label rv">Metode Pembayaran</p>
-  <div class="paygrid rv"><div class="paycard" onclick="handlePaySel(this,'ff')" data-pay="DANA"><span class="payico">💙</span><div class="payname">DANA</div><div class="paydesc">Transfer saldo DANA</div></div><div class="paycard" onclick="handlePaySel(this,'ff')" data-pay="QRIS"><span class="payico">📱</span><div class="payname">QRIS</div><div class="paydesc">Scan QR semua e-wallet</div></div></div>
-  <p class="sec-label rv">Atau Chat Admin</p>
-  <div class="admingrid rv"><a href="https://wa.me/6285185620148" target="_blank" class="admincard wa"><span class="aflag">🇮🇩</span><div><div class="alabel">Indonesia</div><div class="anum">+62 851-8562-0148</div><div class="atype">WhatsApp</div></div></a><a href="https://wa.me/639100228343" target="_blank" class="admincard tele"><span class="aflag">🇵🇭</span><div><div class="alabel">Filipina</div><div class="anum">+63 910-022-8343</div><div class="atype">WhatsApp</div></div></a></div>
-  <button class="osub ff rv" onclick="submitOrder('ff')">🛒 ORDER SEKARANG</button>
+  <div class="gbanner ff"><div class="bicon">🔥</div><div><div class="btitle ff">FREE FIRE — DIAMOND</div><div class="bdesc">Top up Diamond FF langsung ke ID kamu. Tanpa login akun.</div><div class="bbadges"><span class="mbadge g">⚡ Instan</span><span class="mbadge o">🔒 Tanpa Password</span><span class="mbadge b">✅ Terpercaya</span></div></div></div>
+  <div class="slabel">Pilih Nominal Diamond</div>
+  <div class="pgrid" id="ff-grid"></div>
+  <div class="selbar" id="ff-bar"><div class="selbar-l"><span style="font-size:22px">💎</span><div><div class="selbar-title" id="ff-stitle">—</div><div class="selbar-price" id="ff-sprice">—</div></div></div><button class="clr-btn" onclick="clearSel('ff')">✕ Batal</button></div>
+  <div class="osection"><h3>DATA AKUN</h3><p class="hint">Pastikan ID sudah benar sebelum order</p><div class="fg"><label>ID Free Fire Kamu</label><input type="text" id="ff-uid" placeholder="contoh123" style="border-color:rgba(255,60,60,.3)"></div></div>
+  <p class="sec-label">Metode Pembayaran</p>
+  <div class="paygrid"><div class="paycard" onclick="handlePaySel(this,'ff')" data-pay="DANA"><span class="payico">💙</span><div class="payname">DANA</div><div class="paydesc">Transfer saldo DANA</div></div><div class="paycard" onclick="handlePaySel(this,'ff')" data-pay="QRIS"><span class="payico">📱</span><div class="payname">QRIS</div><div class="paydesc">Scan QR semua e-wallet</div></div></div>
+  <p class="sec-label">Atau Chat Admin</p>
+  <div class="admingrid"><a href="https://wa.me/6285185620148" target="_blank" class="admincard wa"><span class="aflag">🇮🇩</span><div><div class="alabel">Indonesia</div><div class="anum">+62 851-8562-0148</div><div class="atype">WhatsApp</div></div></a><a href="https://wa.me/639100228343" target="_blank" class="admincard tele"><span class="aflag">🇵🇭</span><div><div class="alabel">Filipina</div><div class="anum">+63 910-022-8343</div><div class="atype">WhatsApp</div></div></a></div>
+  <button class="osub ff" onclick="submitOrder('ff')">🛒 ORDER SEKARANG</button>
 </div>
-
-<!-- RBX PAGE -->
 <div class="page" id="page-rbx">
-  <div class="gbanner rbx rv"><div class="bicon">🎮</div><div><div class="btitle rbx">ROBLOX — ROBUX</div><div class="bdesc">Top up Robux ke akun Roblox kamu!</div><div class="bbadges"><span class="mbadge b">🚀 Langsung / 5-7 Hari</span><span class="mbadge g">💰 Paling Hemat</span></div></div></div>
-  <div class="type-row rv"><div class="ttype act slow" id="tt-slow" onclick="selType('slow')"><span class="ti">⏳</span><div class="tn">ROBUX 5–7 HARI</div><div class="td">Masuk dalam 5–7 hari. Harga paling hemat!</div><span class="tb">PALING HEMAT</span></div><div class="ttype" id="tt-fast" onclick="selType('fast')"><span class="ti">⚡</span><div class="tn">ROBUX LANGSUNG</div><div class="td">Langsung masuk ke akun. Diproses secepatnya!</div><span class="tb">LANGSUNG MASUK</span></div></div>
-  <div class="slabel rv" id="rbx-label">Pilih Nominal — 5–7 Hari (Paling Hemat)</div>
-  <div class="pgrid rv" id="rbx-grid"></div>
-  <div class="selbar rv" id="rbx-bar"><div class="selbar-l"><span style="font-size:22px">🎮</span><div><div class="selbar-title" id="rbx-stitle">—</div><div class="selbar-price" id="rbx-sprice">—</div></div></div><button class="clr-btn" onclick="clearSel('rbx')">✕ Batal</button></div>
-  <div class="osection rv"><h3>DATA AKUN</h3><p class="hint">Masukkan username Roblox dengan benar.</p><div class="fg"><label>Username Roblox Kamu</label><input type="text" id="rbx-user" placeholder="contoh123"></div></div>
-  <p class="sec-label rv">Metode Pembayaran</p>
-  <div class="paygrid rv"><div class="paycard" onclick="handlePaySel(this,'rbx')" data-pay="DANA"><span class="payico">💙</span><div class="payname">DANA</div><div class="paydesc">Transfer saldo DANA</div></div><div class="paycard" onclick="handlePaySel(this,'rbx')" data-pay="QRIS"><span class="payico">📱</span><div class="payname">QRIS</div><div class="paydesc">Scan QR semua e-wallet</div></div></div>
-  <p class="sec-label rv">Atau Chat Admin</p>
-  <div class="admingrid rv"><a href="https://wa.me/6285185620148" target="_blank" class="admincard wa"><span class="aflag">🇮🇩</span><div><div class="alabel">Indonesia</div><div class="anum">+62 851-8562-0148</div><div class="atype">WhatsApp</div></div></a><a href="https://wa.me/639100228343" target="_blank" class="admincard tele"><span class="aflag">🇵🇭</span><div><div class="alabel">Filipina</div><div class="anum">+63 910-022-8343</div><div class="atype">WhatsApp</div></div></a></div>
-  <button class="osub rbx rv" onclick="submitOrder('rbx')">🛒 ORDER SEKARANG</button>
+  <div class="gbanner rbx"><div class="bicon">🎮</div><div><div class="btitle rbx">ROBLOX — ROBUX</div><div class="bdesc">Top up Robux ke akun Roblox kamu!</div><div class="bbadges"><span class="mbadge b">🚀 Langsung / 5-7 Hari</span><span class="mbadge g">💰 Paling Hemat</span></div></div></div>
+  <div class="type-row"><div class="ttype act slow" id="tt-slow" onclick="selType('slow')"><span class="ti">⏳</span><div class="tn">ROBUX 5–7 HARI</div><div class="td">Masuk dalam 5–7 hari. Harga paling hemat!</div><span class="tb">PALING HEMAT</span></div><div class="ttype" id="tt-fast" onclick="selType('fast')"><span class="ti">⚡</span><div class="tn">ROBUX LANGSUNG</div><div class="td">Langsung masuk ke akun. Diproses secepatnya!</div><span class="tb">LANGSUNG MASUK</span></div></div>
+  <div class="slabel" id="rbx-label">Pilih Nominal — 5–7 Hari (Paling Hemat)</div>
+  <div class="pgrid" id="rbx-grid"></div>
+  <div class="selbar" id="rbx-bar"><div class="selbar-l"><span style="font-size:22px">🎮</span><div><div class="selbar-title" id="rbx-stitle">—</div><div class="selbar-price" id="rbx-sprice">—</div></div></div><button class="clr-btn" onclick="clearSel('rbx')">✕ Batal</button></div>
+  <div class="osection"><h3>DATA AKUN</h3><p class="hint">Masukkan username Roblox dengan benar.</p><div class="fg"><label>Username Roblox Kamu</label><input type="text" id="rbx-user" placeholder="contoh123"></div></div>
+  <p class="sec-label">Metode Pembayaran</p>
+  <div class="paygrid"><div class="paycard" onclick="handlePaySel(this,'rbx')" data-pay="DANA"><span class="payico">💙</span><div class="payname">DANA</div><div class="paydesc">Transfer saldo DANA</div></div><div class="paycard" onclick="handlePaySel(this,'rbx')" data-pay="QRIS"><span class="payico">📱</span><div class="payname">QRIS</div><div class="paydesc">Scan QR semua e-wallet</div></div></div>
+  <p class="sec-label">Atau Chat Admin</p>
+  <div class="admingrid"><a href="https://wa.me/6285185620148" target="_blank" class="admincard wa"><span class="aflag">🇮🇩</span><div><div class="alabel">Indonesia</div><div class="anum">+62 851-8562-0148</div><div class="atype">WhatsApp</div></div></a><a href="https://wa.me/639100228343" target="_blank" class="admincard tele"><span class="aflag">🇵🇭</span><div><div class="alabel">Filipina</div><div class="anum">+63 910-022-8343</div><div class="atype">WhatsApp</div></div></a></div>
+  <button class="osub rbx" onclick="submitOrder('rbx')">🛒 ORDER SEKARANG</button>
+</div>
 </div>
 
-<!-- ULASAN SECTION (tampil di semua page, di luar page div) -->
-</div><!-- /container -->
-
-<!-- ULASAN - full width section -->
-<section style="padding:0 0 60px;position:relative;z-index:5">
+<!-- ULASAN SECTION -->
+<section class="review-section">
 <div class="container">
-  <div class="review-section rv">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:12px">
+  <div class="rv-section" id="rv-section">
+    <div class="rv-header">
       <div>
-        <div class="review-section-title">⭐ ULASAN PEMBELI</div>
-        <div style="font-size:12px;color:var(--muted)">Dilihat semua orang · Admin bisa membalas</div>
+        <div class="rv-title">⭐ ULASAN PEMBELI</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:3px">Real-time · Dilihat semua orang · Admin bisa balas</div>
       </div>
-      <div class="review-avg">
-        <div class="review-avg-num" id="avg-num">5.0</div>
+      <div class="rv-avg">
+        <div class="rv-avg-num" id="avg-num">5.0</div>
         <div>
-          <div class="review-avg-stars" id="avg-stars">⭐⭐⭐⭐⭐</div>
-          <div class="review-avg-total" id="avg-total">0 ulasan</div>
+          <div class="rv-avg-stars" id="avg-stars">⭐⭐⭐⭐⭐</div>
+          <div class="rv-avg-total" id="avg-total">0 ulasan</div>
         </div>
       </div>
     </div>
-    <div class="review-list" id="review-list"></div>
-    <!-- FORM ULASAN -->
-    <div class="review-form">
-      <h4>✍️ TULIS ULASAN KAMU</h4>
-      <div id="review-form-inner">
+    <div class="rv-list" id="rv-list">
+      <div style="text-align:center;color:var(--muted);font-size:13px;padding:20px">Memuat ulasan...</div>
+    </div>
+    <div class="rv-form" id="rv-form">
+      <h4>✍️ TULIS ULASAN</h4>
+      <div id="rv-form-body">
         <p style="font-size:12px;color:var(--muted);margin-bottom:12px">Login dulu untuk menulis ulasan</p>
         <button onclick="document.getElementById('authOverlay').classList.add('open')" style="padding:9px 20px;border-radius:8px;border:none;background:linear-gradient(135deg,var(--rbx),#0099cc);color:#fff;font-family:'Exo 2',sans-serif;font-weight:700;font-size:13px;cursor:pointer">Login</button>
       </div>
@@ -408,7 +481,7 @@ footer{position:relative;z-index:5;border-top:1px solid var(--border);padding:24
 <div class="chat-win" id="chatWin">
   <div class="chat-head">
     <div class="ch-ava">💬</div>
-    <div><div class="ch-title">Chat Publik TalentID</div><div class="ch-sub"><div class="ch-online"></div><span id="online-count">Live</span></div></div>
+    <div><div class="ch-title">Chat Publik TalentID</div><div class="ch-sub"><div class="ch-live"></div><span id="online-count">Live</span></div></div>
     <button class="ch-close" onclick="toggleChat()">✕</button>
   </div>
   <div class="chat-msgs" id="chatMsgs"><div class="sys-msg">Memuat chat...</div></div>
@@ -431,12 +504,7 @@ footer{position:relative;z-index:5;border-top:1px solid var(--border);padding:24
 </div>
 
 <script>
-// ============================================================
-// TALENTID STORE - Semua data pakai localStorage yang dishare
-// Chat & Ulasan bisa dilihat semua orang di browser yang sama domain
-// ============================================================
-
-// === PRODUCTS ===
+// ===== PRODUCTS =====
 var ffProds=[{a:'5',u:'Diamond',p:'Rp 870',old:'',hot:false,sale:false},{a:'10',u:'Diamond',p:'Rp 1.820',old:'',hot:false,sale:false},{a:'15',u:'Diamond',p:'Rp 2.660',old:'',hot:false,sale:false},{a:'20',u:'Diamond',p:'Rp 3.553',old:'',hot:false,sale:false},{a:'50',u:'Diamond',p:'Rp 6.450',old:'',hot:false,sale:false},{a:'70',u:'Diamond',p:'Rp 9.310',old:'',hot:false,sale:false},{a:'140',u:'Diamond',p:'Rp 18.200',old:'',hot:true,sale:false},{a:'355',u:'Diamond',p:'Rp 45.410',old:'',hot:false,sale:false},{a:'1450',u:'Diamond',p:'Rp 186.470',old:'',hot:false,sale:false}];
 var rbxSlowProds=[{a:'50',u:'Robux',p:'Rp 5.990',old:'Rp 6.000',hot:false,sale:true},{a:'100',u:'Robux',p:'Rp 11.486',old:'',hot:false,sale:false},{a:'200',u:'Robux',p:'Rp 22.890',old:'',hot:false,sale:false},{a:'300',u:'Robux',p:'Rp 34.370',old:'',hot:false,sale:false},{a:'400',u:'Robux',p:'Rp 45.660',old:'',hot:false,sale:false},{a:'500',u:'Robux',p:'Rp 57.050',old:'',hot:false,sale:false},{a:'600',u:'Robux',p:'Rp 68.440',old:'',hot:false,sale:false},{a:'700',u:'Robux',p:'Rp 79.750',old:'',hot:false,sale:false},{a:'800',u:'Robux',p:'Rp 91.120',old:'',hot:false,sale:false},{a:'900',u:'Robux',p:'Rp 103.000',old:'',hot:false,sale:false},{a:'1000',u:'Robux',p:'Rp 113.900',old:'Rp 115.000',hot:false,sale:true}];
 var rbxFastProds=rbxSlowProds.map(function(p){var b=parseInt(p.p.replace(/[^0-9]/g,''));var np=Math.round(b*1.12/50)*50;return{a:p.a,u:p.u,p:'Rp '+np.toLocaleString('id-ID'),old:'',hot:false,sale:false};});
@@ -450,34 +518,28 @@ function renderFF(){document.getElementById('ff-grid').innerHTML=ffProds.map(fun
 function renderRBX(t){var list=t==='slow'?rbxSlowProds:rbxFastProds;var c=t==='slow'?'rbxs':'rbx';document.getElementById('rbx-grid').innerHTML=list.map(function(p){return mkCard(p,c,c,c,'rbx');}).join('');document.getElementById('rbx-label').textContent=t==='slow'?'Pilih Nominal — 5–7 Hari (Paling Hemat)':'Pilih Nominal — Langsung Masuk';clearSel('rbx');}
 renderFF();renderRBX('slow');
 
-// === STATE ===
+// ===== STATE =====
 var currentUser=null,selectedFF=null,selectedRBX=null,payState={ff:null,rbx:null},rbxType='slow',orderData={};
-var chatOpen=false,unreadChat=0,chatPolling=null,lastChatLen=0;
+window.chatOpen=false;window.unreadChat=0;window.lastChatCount=0;
 var selectedStars=5;
 
-// === UTILS ===
-function escHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+// ===== UTILS =====
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function formatDate(d){
   var days=['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'],months=['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
   var h=String(d.getHours()).padStart(2,'0'),m=String(d.getMinutes()).padStart(2,'0');
   return days[d.getDay()]+', '+d.getDate()+' '+months[d.getMonth()]+' '+d.getFullYear()+' · '+h+':'+m;
 }
-function formatDateShort(d){
-  var months=['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
-  return d.getDate()+' '+months[d.getMonth()]+' '+d.getFullYear();
-}
-function getAvaColor(name){
-  var c=['#5865f2','#e91e63','#00cfff','#00e87a','#ff8c00','#a78bfa','#ff3c3c','#ec4899'];
-  var i=0;for(var j=0;j<name.length;j++)i+=name.charCodeAt(j);return c[i%c.length];
-}
-function starsHtml(n){var s='';for(var i=0;i<5;i++)s+=i<n?'⭐':'☆';return s;}
+function fmtShort(d){var months=['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];return d.getDate()+' '+months[d.getMonth()]+' '+d.getFullYear();}
+function getAvaColor(name){var c=['#5865f2','#e91e63','#00cfff','#00e87a','#ff8c00','#a78bfa','#ff3c3c','#ec4899'];var i=0;for(var j=0;j<name.length;j++)i+=name.charCodeAt(j);return c[i%c.length];}
+function starsStr(n){var s='';for(var i=0;i<5;i++)s+=i<n?'⭐':'☆';return s;}
 
-// === AUTH ===
+// ===== AUTH (localStorage) =====
 function getUsers(){return JSON.parse(localStorage.getItem('talentid_users')||'[]');}
 function saveUsers(u){localStorage.setItem('talentid_users',JSON.stringify(u));}
 function loadUser(){
   var u=localStorage.getItem('talentid_loggedin');
-  if(u){currentUser=JSON.parse(u);document.getElementById('userLabel').textContent=currentUser.name;showReviewForm();}
+  if(u){currentUser=JSON.parse(u);document.getElementById('userLabel').textContent=currentUser.name;buildReviewForm();}
   else{document.getElementById('authOverlay').classList.add('open');}
 }
 function switchAuth(tab){
@@ -508,7 +570,7 @@ function loginSuccess(u){
   currentUser=u;localStorage.setItem('talentid_loggedin',JSON.stringify(u));
   document.getElementById('userLabel').textContent=u.name;
   document.getElementById('authOverlay').classList.remove('open');
-  showReviewForm();
+  buildReviewForm();
 }
 function handleUserBtn(){
   if(!currentUser){document.getElementById('authOverlay').classList.add('open');return;}
@@ -516,11 +578,11 @@ function handleUserBtn(){
     currentUser=null;localStorage.removeItem('talentid_loggedin');
     document.getElementById('userLabel').textContent='Login';
     document.getElementById('authOverlay').classList.add('open');
-    showReviewForm();
+    buildReviewForm();
   }
 }
 
-// === PAGE NAV ===
+// ===== PRODUCTS =====
 function selectProd(el,game,a,u,p){
   document.getElementById(game==='ff'?'ff-grid':'rbx-grid').querySelectorAll('.pcard').forEach(function(c){c.classList.remove('sel-ff','sel-rbx','sel-rbxs');});
   el.classList.add(game==='ff'?'sel-ff':(rbxType==='slow'?'sel-rbxs':'sel-rbx'));
@@ -552,195 +614,144 @@ function showPage(name){
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-// === ULASAN / REVIEW ===
-function getReviews(){return JSON.parse(localStorage.getItem('talentid_reviews')||'[]');}
-function saveReviews(r){localStorage.setItem('talentid_reviews',JSON.stringify(r));}
+// ===== REVIEWS (Firebase) =====
+window.renderReviewsFromFB = function(reviews) {
+  var list = document.getElementById('rv-list');
+  var avgNum = document.getElementById('avg-num');
+  var avgStars = document.getElementById('avg-stars');
+  var avgTotal = document.getElementById('avg-total');
+  if (!list) return;
 
-function renderReviews(){
-  var reviews=getReviews();
-  var list=document.getElementById('review-list');
-  var avgEl=document.getElementById('avg-num');
-  var avgStarsEl=document.getElementById('avg-stars');
-  var totalEl=document.getElementById('avg-total');
-
-  if(!reviews.length){
-    list.innerHTML='<div style="text-align:center;color:var(--muted);font-size:13px;padding:20px">Belum ada ulasan. Jadilah yang pertama! 🌟</div>';
-    avgEl.textContent='5.0';avgStarsEl.textContent='⭐⭐⭐⭐⭐';totalEl.textContent='0 ulasan';
+  if (!reviews || !reviews.length) {
+    list.innerHTML = '<div style="text-align:center;color:var(--muted);font-size:13px;padding:20px">Belum ada ulasan. Jadilah yang pertama! 🌟</div>';
+    if(avgNum) avgNum.textContent='5.0';
+    if(avgStars) avgStars.textContent='⭐⭐⭐⭐⭐';
+    if(avgTotal) avgTotal.textContent='0 ulasan';
     return;
   }
 
-  // Calculate average
-  var total=reviews.reduce(function(s,r){return s+r.stars;},0);
-  var avg=(total/reviews.length).toFixed(1);
-  avgEl.textContent=avg;
-  var fullStars=Math.round(total/reviews.length);
-  var starsStr='';for(var i=0;i<5;i++)starsStr+=i<fullStars?'⭐':'☆';
-  avgStarsEl.textContent=starsStr;
-  totalEl.textContent=reviews.length+' ulasan';
+  var total = reviews.reduce(function(s,r){return s+r.stars;},0);
+  var avg = (total/reviews.length).toFixed(1);
+  if(avgNum) avgNum.textContent = avg;
+  if(avgStars) avgStars.textContent = starsStr(Math.round(total/reviews.length));
+  if(avgTotal) avgTotal.textContent = reviews.length + ' ulasan';
 
-  list.innerHTML=reviews.slice().reverse().map(function(r,idx){
-    var color=getAvaColor(r.name);
-    var init=r.name.charAt(0).toUpperCase();
-    var starsDisp='';for(var i=0;i<5;i++)starsDisp+=i<r.stars?'⭐':'☆';
-    var replyHtml='';
-    if(r.reply){
-      replyHtml='<div class="review-reply"><div class="review-reply-label">⭐ Admin TALENTID Store</div><div style="font-size:13px">'+escHtml(r.reply)+'</div></div>';
-    }
-    var actualIdx=reviews.length-1-idx;
-    return '<div class="review-card">'+
-      '<div class="review-card-top">'+
-        '<div class="review-name"><div class="ava" style="background:'+color+'">'+init+'</div>'+escHtml(r.name)+'</div>'+
-        '<div>'+
-          '<div class="review-stars">'+starsDisp+'</div>'+
-          '<div class="review-date">'+formatDateShort(new Date(r.time))+'</div>'+
-        '</div>'+
-      '</div>'+
-      '<div class="review-msg">'+escHtml(r.message)+'</div>'+
-      replyHtml+
-    '</div>';
+  list.innerHTML = reviews.map(function(r) {
+    var color = getAvaColor(r.name);
+    var init = r.name.charAt(0).toUpperCase();
+    var replyHtml = r.reply ?
+      '<div class="rv-reply"><div class="rv-reply-lbl">⭐ Admin TalentID Store</div><div class="rv-reply-txt">'+esc(r.reply)+'</div></div>' : '';
+    return '<div class="rv-card">' +
+      '<div class="rv-card-top">' +
+        '<div class="rv-name-row"><div class="rv-ava" style="background:'+color+'">'+init+'</div><div class="rv-name">'+esc(r.name)+'</div></div>' +
+        '<div><div class="rv-stars">'+starsStr(r.stars)+'</div><div class="rv-date">'+fmtShort(new Date(r.time))+'</div></div>' +
+      '</div>' +
+      '<div class="rv-msg">'+esc(r.message)+'</div>' +
+      replyHtml +
+      '</div>';
   }).join('');
-}
 
-function showReviewForm(){
-  var el=document.getElementById('review-form-inner');
-  if(!currentUser){
-    el.innerHTML='<p style="font-size:12px;color:var(--muted);margin-bottom:12px">Login dulu untuk menulis ulasan</p><button onclick="document.getElementById(\'authOverlay\').classList.add(\'open\')" style="padding:9px 20px;border-radius:8px;border:none;background:linear-gradient(135deg,var(--rbx),#0099cc);color:#fff;font-family:\'Exo 2\',sans-serif;font-weight:700;font-size:13px;cursor:pointer">Login</button>';
+  // Check if user already reviewed
+  buildReviewForm();
+};
+
+function buildReviewForm() {
+  var el = document.getElementById('rv-form-body');
+  if (!el) return;
+  if (!currentUser) {
+    el.innerHTML = '<p style="font-size:12px;color:var(--muted);margin-bottom:12px">Login dulu untuk menulis ulasan</p><button onclick="document.getElementById(\'authOverlay\').classList.add(\'open\')" style="padding:9px 20px;border-radius:8px;border:none;background:linear-gradient(135deg,var(--rbx),#0099cc);color:#fff;font-family:\'Exo 2\',sans-serif;font-weight:700;font-size:13px;cursor:pointer">Login</button>';
     return;
   }
-  el.innerHTML=
-    '<p style="font-size:12px;color:var(--muted);margin-bottom:12px">Menulis sebagai <strong style="color:var(--text)">'+escHtml(currentUser.name)+'</strong></p>'+
-    '<p style="font-size:11px;color:var(--muted);margin-bottom:8px;letter-spacing:1px">PILIH BINTANG</p>'+
-    '<div class="star-picker" id="starPicker">'+
-      '<span onclick="setStar(1)" data-s="1">⭐</span>'+
-      '<span onclick="setStar(2)" data-s="2">⭐</span>'+
-      '<span onclick="setStar(3)" data-s="3">⭐</span>'+
-      '<span onclick="setStar(4)" data-s="4">⭐</span>'+
-      '<span onclick="setStar(5)" data-s="5">⭐</span>'+
-    '</div>'+
-    '<textarea class="review-inp" id="review-msg-inp" rows="3" placeholder="Ceritakan pengalaman kamu berbelanja di TalentID Store..." maxlength="300"></textarea>'+
-    '<button class="review-submit" onclick="submitReview()">⭐ Kirim Ulasan</button>';
-  selectedStars=5;updateStarPicker();
+  // Check if already reviewed
+  var reviews = window.FB_REVIEWS || [];
+  var already = reviews.find(function(r){return r.name === currentUser.name;});
+  if (already) {
+    el.innerHTML = '<div class="rv-already">✅ Kamu sudah memberi ulasan ' + starsStr(already.stars) + '<br><small style="color:var(--muted)">Terima kasih, ulasanmu sudah dilihat semua orang!</small></div>';
+    return;
+  }
+  selectedStars = 5;
+  el.innerHTML =
+    '<p style="font-size:12px;color:var(--muted);margin-bottom:12px">Menulis sebagai <strong style="color:var(--text)">'+esc(currentUser.name)+'</strong></p>'+
+    '<p style="font-size:11px;color:var(--muted);margin-bottom:8px;letter-spacing:1px;text-transform:uppercase">Pilih Bintang</p>'+
+    '<div class="star-row" id="starRow"><span onclick="setStar(1)" data-s="1">⭐</span><span onclick="setStar(2)" data-s="2">⭐</span><span onclick="setStar(3)" data-s="3">⭐</span><span onclick="setStar(4)" data-s="4">⭐</span><span onclick="setStar(5)" data-s="5">⭐</span></div>'+
+    '<textarea class="rv-inp" id="rv-msg-inp" rows="3" placeholder="Ceritakan pengalaman belanja kamu di TalentID Store..." maxlength="300"></textarea>'+
+    '<button class="rv-submit" onclick="submitReview()">⭐ Kirim Ulasan</button>';
+  updateStarRow();
 }
 
-function setStar(n){selectedStars=n;updateStarPicker();}
-function updateStarPicker(){
-  var picks=document.querySelectorAll('#starPicker span');
-  picks.forEach(function(s,i){s.style.opacity=i<selectedStars?'1':'0.3';s.style.transform=i<selectedStars?'scale(1.1)':'scale(1)';});
+function setStar(n){selectedStars=n;updateStarRow();}
+function updateStarRow(){
+  var spans=document.querySelectorAll('#starRow span');
+  spans.forEach(function(s,i){s.classList.toggle('lit',i<selectedStars);});
 }
 
 function submitReview(){
-  if(!currentUser)return;
-  var msg=document.getElementById('review-msg-inp').value.trim();
+  if(!currentUser){document.getElementById('authOverlay').classList.add('open');return;}
+  if(!window.FB_READY){alert('Koneksi ke database belum siap. Tunggu sebentar!');return;}
+  var msg=document.getElementById('rv-msg-inp').value.trim();
   if(!msg){alert('Tulis pesan ulasan dulu!');return;}
-  var reviews=getReviews();
-  reviews.push({name:currentUser.name,stars:selectedStars,message:msg,time:new Date().toISOString(),reply:''});
-  saveReviews(reviews);
-  renderReviews();
-  document.getElementById('review-msg-inp').value='';
-  selectedStars=5;updateStarPicker();
-  sendTG('⭐ *ULASAN BARU*\n👤 '+currentUser.name+'\n'+starsHtml(selectedStars)+'\n"'+msg+'"');
-  alert('Ulasan berhasil dikirim! Terima kasih 🙏');
-}
-function starsHtml(n){var s='';for(var i=0;i<n;i++)s+='⭐';return s;}
-
-// Poll reviews every 5s for live update
-setInterval(renderReviews, 5000);
-
-// === CHAT ===
-function lsGetChat(){return JSON.parse(localStorage.getItem('talentid_public_chat')||'[]');}
-function lsSaveChat(m){localStorage.setItem('talentid_public_chat',JSON.stringify(m));}
-
-function buildMsgHtml(msg){
-  var isMe=currentUser&&msg.sender===currentUser.name;
-  var isAdmin=msg.is_admin||msg.isAdmin;
-  var color=getAvaColor(msg.sender);
-  var init=msg.sender.charAt(0).toUpperCase();
-  var t=new Date(msg.time||msg.created_at||Date.now());
-  var ts=String(t.getHours()).padStart(2,'0')+':'+String(t.getMinutes()).padStart(2,'0');
-  var adminBadge=isAdmin?'<div class="admin-chat-badge">⭐ ADMIN PREMIUM</div>':'';
-  var cls='cmsg-wrap'+(isMe?' me':'')+(isAdmin?' is-admin':'');
-  var bubbleCls='cmsg-bubble '+(isMe?'mine':'other');
-  var txt=escHtml(msg.message||msg.text||'');
-  return '<div class="'+cls+'"><div class="cmsg-ava" style="background:'+color+'">'+init+'</div><div class="cmsg-body"><div class="cmsg-name">'+escHtml(msg.sender)+'</div><div class="'+bubbleCls+'">'+adminBadge+txt+'</div><div class="cmsg-time">'+ts+'</div></div></div>';
+  var reviews=window.FB_REVIEWS||[];
+  var already=reviews.find(function(r){return r.name===currentUser.name;});
+  if(already){alert('Kamu sudah memberi ulasan!');return;}
+  window.FB_PUSH(window.FB_REF(window.FB_DB,'reviews'),{
+    name:currentUser.name,stars:selectedStars,message:msg,
+    time:Date.now(),reply:''
+  }).then(function(){
+    alert('Ulasan berhasil dikirim! Terima kasih 🙏');
+    sendTG('⭐ *ULASAN BARU*\n👤 '+currentUser.name+'\n'+starsStr(selectedStars)+'\n"'+msg+'"');
+  }).catch(function(e){alert('Gagal kirim: '+e.message);});
 }
 
-function loadChat(){
-  var msgs=lsGetChat();
-  var area=document.getElementById('chatMsgs');
-  if(!msgs.length){area.innerHTML='<div class="sys-msg">Jadilah yang pertama chat! 👋</div>';lastChatLen=0;return;}
-  area.innerHTML=msgs.map(buildMsgHtml).join('');
-  area.scrollTop=area.scrollHeight;
-  lastChatLen=msgs.length;
-  var now=Date.now(),unique=[];
-  msgs.filter(function(m){return now-new Date(m.time||0).getTime()<300000;}).forEach(function(m){if(unique.indexOf(m.sender)<0)unique.push(m.sender);});
-  var el=document.getElementById('online-count');
-  if(el)el.textContent=Math.max(unique.length,1)+' online';
-}
-
-function pollChat(){
-  if(!chatOpen)return;
-  var msgs=lsGetChat();
-  if(msgs.length===lastChatLen)return;
-  var area=document.getElementById('chatMsgs');
-  var wasBottom=area.scrollHeight-area.scrollTop-area.clientHeight<80;
-  var placeholder=area.querySelector('.sys-msg');if(placeholder)placeholder.remove();
-  var newMsgs=msgs.slice(lastChatLen);
-  newMsgs.forEach(function(msg){
-    area.innerHTML+=buildMsgHtml(msg);
-    if(!currentUser||msg.sender!==currentUser.name){
-      unreadChat++;
-      var fab=document.getElementById('chat-notif-fab');
-      fab.textContent=unreadChat>9?'9+':String(unreadChat);
-      fab.classList.add('show');
-    }
-  });
-  if(wasBottom)area.scrollTop=area.scrollHeight;
-  lastChatLen=msgs.length;
-}
+// ===== CHAT (Firebase) =====
+window.renderChatFromFB = function(msgs) {
+  var area = document.getElementById('chatMsgs');
+  if (!area) return;
+  if (!msgs || !msgs.length) {
+    area.innerHTML = '<div class="sys-msg">Jadilah yang pertama chat! 👋</div>';
+    return;
+  }
+  var wasBottom = area.scrollHeight - area.scrollTop - area.clientHeight < 80;
+  area.innerHTML = msgs.map(function(msg) {
+    var isMe = currentUser && msg.sender === currentUser.name;
+    var isAdmin = msg.is_admin;
+    var color = getAvaColor(msg.sender);
+    var init = msg.sender.charAt(0).toUpperCase();
+    var t = new Date(msg.time || Date.now());
+    var ts = String(t.getHours()).padStart(2,'0')+':'+String(t.getMinutes()).padStart(2,'0');
+    var adminBadge = isAdmin ? '<div class="admin-chat-badge">⭐ ADMIN PREMIUM</div>' : '';
+    var cls = 'cmsg-wrap'+(isMe?' me':'')+(isAdmin?' is-admin':'');
+    var bubbleCls = 'cmsg-bubble '+(isMe?'mine':'other');
+    return '<div class="'+cls+'"><div class="cmsg-ava" style="background:'+color+'">'+init+'</div><div class="cmsg-body"><div class="cmsg-name">'+esc(msg.sender)+'</div><div class="'+bubbleCls+'">'+adminBadge+esc(msg.message||'')+'</div><div class="cmsg-time">'+ts+'</div></div></div>';
+  }).join('');
+  if (wasBottom) area.scrollTop = area.scrollHeight;
+};
 
 function toggleChat(){
   if(!currentUser){document.getElementById('authOverlay').classList.add('open');return;}
-  chatOpen=!chatOpen;
-  document.getElementById('chatWin').classList.toggle('open',chatOpen);
-  if(chatOpen){
-    unreadChat=0;
+  window.chatOpen=!window.chatOpen;
+  document.getElementById('chatWin').classList.toggle('open',window.chatOpen);
+  if(window.chatOpen){
+    window.unreadChat=0;
     document.getElementById('chat-notif-fab').classList.remove('show');
-    loadChat();
-    if(chatPolling)clearInterval(chatPolling);
-    chatPolling=setInterval(pollChat,2000);
-  } else {
-    if(chatPolling){clearInterval(chatPolling);chatPolling=null;}
+    if(window.FB_CHAT_MSGS) renderChatFromFB(window.FB_CHAT_MSGS);
   }
 }
 
 function sendMsg(){
   if(!currentUser){document.getElementById('authOverlay').classList.add('open');return;}
+  if(!window.FB_READY){alert('Koneksi belum siap!');return;}
   var inp=document.getElementById('chatInp');
   var text=inp.value.trim();if(!text)return;
   inp.value='';
-  var isAdmin=currentUser.name==='ADMIN';
-  var newMsg={sender:currentUser.name,message:text,text:text,is_admin:isAdmin,isAdmin:isAdmin,time:new Date().toISOString()};
-  var msgs=lsGetChat();msgs.push(newMsg);
-  if(msgs.length>200)msgs=msgs.slice(msgs.length-200);
-  lsSaveChat(msgs);
-  var area=document.getElementById('chatMsgs');
-  var placeholder=area.querySelector('.sys-msg');if(placeholder)placeholder.remove();
-  area.innerHTML+=buildMsgHtml(newMsg);
-  area.scrollTop=area.scrollHeight;
-  lastChatLen=msgs.length;
-  sendTG('💬 *CHAT - '+currentUser.name+'*\n'+text);
+  window.FB_PUSH(window.FB_REF(window.FB_DB,'chat'),{
+    sender:currentUser.name,
+    message:text,
+    is_admin:currentUser.name==='ADMIN',
+    time:Date.now()
+  }).catch(function(e){inp.value=text;alert('Gagal kirim!');});
 }
 
-// === STORE STATUS ===
-function checkStatus(){
-  var s=localStorage.getItem('talentid_status')||'on';
-  var msg=localStorage.getItem('talentid_offline_msg')||'Maaf, TalentID Store sedang offline.';
-  var el=document.getElementById('offline-overlay');
-  if(s==='off'){el.classList.add('show');document.getElementById('offline-msg-txt').textContent=msg;}
-  else{el.classList.remove('show');}
-}
-
-// === ORDER ===
+// ===== ORDER =====
 function submitOrder(game){
   if(!currentUser){document.getElementById('authOverlay').classList.add('open');return;}
   var sel=game==='ff'?selectedFF:selectedRBX;
@@ -761,13 +772,15 @@ function sendWA(region){
   var d=orderData,gl=d.game==='ff'?'Free Fire':'Roblox',il=d.game==='ff'?'ID Free Fire':'Username Roblox',now=new Date();
   var msg='Halo TalentID Store! Saya mau order:\n\n🛒 *ORDER BARU — TalentID Store*\n👤 *Pembeli:* '+d.user+'\n🎮 *Game:* '+gl+'\n💎 *Nominal:* '+d.sel.a+' '+d.sel.u+d.tl+'\n💰 *Harga:* '+d.sel.p+'\n🆔 *'+il+':* '+d.uid+'\n💳 *Bayar:* '+d.pay+'\n📅 *Tgl:* '+formatDate(now)+'\n\nMohon konfirmasi. Terima kasih!';
   sendTGOrder(d.user,gl,d.sel.a+' '+d.sel.u+d.tl,d.sel.p,il,d.uid,d.pay,formatDate(now));
-  saveTx({user:d.user,game:gl,nominal:d.sel.a+' '+d.sel.u+d.tl,harga:d.sel.p,id:d.uid,pay:d.pay,date:now.toISOString()});
+  saveTxLocal({user:d.user,game:gl,nominal:d.sel.a+' '+d.sel.u+d.tl,harga:d.sel.p,id:d.uid,pay:d.pay,date:now.toISOString()});
+  // Also save to Firebase
+  if(window.FB_READY){window.FB_PUSH(window.FB_REF(window.FB_DB,'transactions'),{user:d.user,game:gl,nominal:d.sel.a+' '+d.sel.u+d.tl,harga:d.sel.p,id:d.uid,pay:d.pay,date:Date.now()}).catch(function(){});}
   window.open('https://wa.me/'+(region==='id'?'6285185620148':'639100228343')+'?text='+encodeURIComponent(msg),'_blank');
   closeModal();
 }
-function saveTx(t){var l=JSON.parse(localStorage.getItem('talentid_transactions')||'[]');l.unshift(t);localStorage.setItem('talentid_transactions',JSON.stringify(l));}
+function saveTxLocal(t){var l=JSON.parse(localStorage.getItem('talentid_transactions')||'[]');l.unshift(t);localStorage.setItem('talentid_transactions',JSON.stringify(l));}
 
-// === TELEGRAM ===
+// ===== TELEGRAM =====
 function sendTG(text){
   var tok=localStorage.getItem('talentid_tg_token'),cid=localStorage.getItem('talentid_tg_chatid');
   if(!tok||!cid)return;
@@ -776,41 +789,20 @@ function sendTG(text){
 function sendTGOrder(user,game,nominal,harga,il,idVal,pay,date){
   var tok=localStorage.getItem('talentid_tg_token'),cid=localStorage.getItem('talentid_tg_chatid');
   if(!tok||!cid)return;
-  function esc(s){return String(s).replace(/([_*\[\]()~`>#+=|{}.!\\-])/g,'\\$1');}
-  var makeMsg=function(numLine){
-    return 'Halo TalentID Store\\! Saya mau order:\n\n'+
-      '🛒 *ORDER BARU — TalentID Store*\n'+
-      '👤 *Pembeli:* '+esc(user)+'\n'+
-      '🎮 *Game:* '+esc(game)+'\n'+
-      '💎 *Nominal:* '+esc(nominal)+'\n'+
-      '💰 *Harga:* '+esc(harga)+'\n'+
-      '🆔 *'+esc(il)+':* '+esc(idVal)+'\n'+
-      '💳 *Bayar:* '+esc(pay)+'\n'+
-      '📅 *Tgl:* '+esc(date)+'\n\n'+
-      numLine+'\n\nMohon konfirmasi\\. Terima kasih\\!';
-  };
-  var msgs=[makeMsg('Di nomor admin\n\\+6285185620148 Indonesia'),makeMsg('Di nomor admin Filipina\n\\+639100228343')];
-  msgs.forEach(function(m){
+  function e(s){return String(s||'').replace(/([_*\[\]()~`>#+=|{}.!\\-])/g,'\\$1');}
+  var mk=function(num){return 'Halo TalentID Store\\! Saya mau order:\n\n🛒 *ORDER BARU — TalentID Store*\n👤 *Pembeli:* '+e(user)+'\n🎮 *Game:* '+e(game)+'\n💎 *Nominal:* '+e(nominal)+'\n💰 *Harga:* '+e(harga)+'\n🆔 *'+e(il)+':* '+e(idVal)+'\n💳 *Bayar:* '+e(pay)+'\n📅 *Tgl:* '+e(date)+'\n\n'+num+'\n\nMohon konfirmasi\\. Terima kasih\\!';};
+  [mk('Di nomor admin\n\\+6285185620148 Indonesia'),mk('Di nomor admin Filipina\n\\+639100228343')].forEach(function(m){
     fetch('https://api.telegram.org/bot'+tok+'/sendMessage',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:cid,text:m,parse_mode:'MarkdownV2'})}).catch(function(){});
   });
 }
 
-// === DRAG CHAT ===
+// ===== DRAG CHAT =====
 (function(){
   var win=document.getElementById('chatWin'),head=win&&win.querySelector('.chat-head');
   if(!head)return;
   var drag=false,sx=0,sy=0,sl=0,st=0;
-  function start(ex,ey){
-    var r=win.getBoundingClientRect();
-    win.style.right='auto';win.style.bottom='auto';
-    win.style.left=r.left+'px';win.style.top=r.top+'px';
-    drag=true;sx=ex;sy=ey;sl=r.left;st=r.top;
-  }
-  function move(ex,ey){
-    if(!drag)return;
-    win.style.left=Math.max(0,Math.min(window.innerWidth-win.offsetWidth,sl+(ex-sx)))+'px';
-    win.style.top=Math.max(0,Math.min(window.innerHeight-win.offsetHeight,st+(ey-sy)))+'px';
-  }
+  function start(ex,ey){var r=win.getBoundingClientRect();win.style.right='auto';win.style.bottom='auto';win.style.left=r.left+'px';win.style.top=r.top+'px';drag=true;sx=ex;sy=ey;sl=r.left;st=r.top;}
+  function move(ex,ey){if(!drag)return;win.style.left=Math.max(0,Math.min(window.innerWidth-win.offsetWidth,sl+(ex-sx)))+'px';win.style.top=Math.max(0,Math.min(window.innerHeight-win.offsetHeight,st+(ey-sy)))+'px';}
   function end(){drag=false;}
   head.addEventListener('mousedown',function(e){if(!e.target.closest('.ch-close')){e.preventDefault();start(e.clientX,e.clientY);}});
   document.addEventListener('mousemove',function(e){move(e.clientX,e.clientY);});
@@ -820,15 +812,11 @@ function sendTGOrder(user,game,nominal,harga,il,idVal,pay,date){
   document.addEventListener('touchend',end);
 })();
 
-// === REVEAL ===
-var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');ro.unobserve(e.target);}});},{threshold:.06});
-document.querySelectorAll('.rv').forEach(function(r){ro.observe(r);});
+// ===== REVEAL =====
+setTimeout(function(){document.getElementById('rv-section').classList.add('vis');},300);
 
-// === INIT ===
+// ===== INIT =====
 loadUser();
-checkStatus();
-renderReviews();
-setInterval(checkStatus,5000);
 </script>
 </body>
 </html>
